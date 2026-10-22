@@ -1,0 +1,24 @@
+{
+  "type": "module",
+  "name": "api-alunos",
+  "version": "1.0.0",
+  "description": "api utilizando nodeJs, express e bando de dados MySql entry point: (index.js)app.js",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/emillyeleslyemarques-oss/tec-api-02.git"
+  },
+  "author": "emillye leslye",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/emillyeleslyemarques-oss/tec-api-02/issues"
+  },
+  "homepage": "https://github.com/emillyeleslyemarques-oss/tec-api-02#readme",
+  "dependencies": {
+    "express": "^5.3.0",
+    "mysql2": "^3.24.6"
+  }
+}
