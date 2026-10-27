@@ -1,15 +1,19 @@
 //importando o express (instalando via terminal)
 import express from 'express';
+import cors from 'cors';
 import {ler, inserir, lerUm, atualizar, excluir} from './src/aluno.js';
 
 const app = express();
-const porta = 3000;
+const porta =  process.env.PORT || 3000;
 
 //habilitando express para trabalhar com o formato JSON
 app.use(express.json());
 
 //habilitando express para trabalhar com o formato URL Encoded (formolario)
 app.use(express.urlencoded({extended : true}) );
+
+//habilitando cors
+app.use(cors());
 
 /*ROTAS */
 //configurando para o inicio da aplicação 
